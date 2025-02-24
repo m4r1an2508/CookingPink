@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking recipes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="logo.jpg" alt="logo">
+    <p>Delicious recipes for everyone!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#recipes">Recipes</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to My Recipe Website!</h2>
+    <p>Here you will find a variety of delicious recipes from around the world. Whether you're a beginner or an expert, we've got something for everyone.</p>
+</section>
+
+<section id="recipes">
+    <h2>Popular Recipes</h2>
+
+    <!-- Recipe Card 1 -->
+    <div class="recipe-card">
+        <h2>Chocolate Chip Cookies</h2>
+        <p>A classic treat loved by all!</p>
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>1 cup butter</li>
+            <li>3/4 cup sugar</li>
+            <li>1 1/2 cups flour</li>
+            <li>1 cup chocolate chips</li>
+            <li>1 egg</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <p>Preheat oven to 350°F. Mix the ingredients, form dough into balls, and bake for 10-12 minutes.</p>
+    </div>
+
+    <!-- Recipe Card 2 -->
+    <div class="recipe-card">
+        <h2>Spaghetti Bolognese</h2>
+        <p>A hearty pasta dish with rich tomato sauce and minced beef.</p>
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>1 lb ground beef</li>
+            <li>1 onion, chopped</li>
+            <li>2 cups tomato sauce</li>
+            <li>1 package spaghetti</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <p>Cook the spaghetti. In a separate pan, sauté onion and beef, then add tomato sauce. Combine with pasta and serve.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or suggestions, feel free to reach out!</p>
+    <form action="submit_form.php" method="POST">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Send Message">
+    </form>
+</section>
+
+<footer>
+    <p>Have a nice day!</p>
+</footer>
+
+</body>
+</html

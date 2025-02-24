@@ -1,0 +1,217 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    color: palevioletred;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: pink; 
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: palevioletred;
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: pink;
+}
+
+/* Main Content */
+section {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+/* Recipe Section */
+#recipes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: palevioletred;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+}
+
+.recipe-card h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: pink;
+}
+
+.recipe-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.recipe-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: pink;
+}
+
+.recipe-card ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.recipe-card li {
+    font-size: 1rem;
+    color: #666;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.recipe-card li::before {
+    content: "✔";
+    color:pink;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: palevioletred;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+form label {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 10px;
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    background-color: pink;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: pink;
+}
+
+/* Footer */
+footer {
+    background-color:pink;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+
+    .recipe-card {
+        padding: 15px;
+    }
+
+    .recipe-card h2 {
+        font-size: 1.8rem;
+    }
+
+    form input, form textarea {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
